@@ -1,6 +1,5 @@
 # README #
 
-This code accompanies *Combinatorial Convolutional Neural Networks for Words* paper (https://arxiv.org/)
 
 ## Usage
 To repeat computational experiments:
@@ -13,9 +12,13 @@ The code for generating palindromes ('palindromes.zip') is in 'GeneratePalindrom
 
 The code for generating non-palindromes ('palindromes.zip') is in 'GenerateNonPalindromes.ipynb'
 
-"The code for generating passwords is in 'GeneratePasswords.ipynb'.
+The code for generating passwords is in 'GeneratePasswords.ipynb'.
 
-passwords.zip and palindromes.zip are available at https://osf.io/qfhcy/
+Correspondingly, LSTM-based experiments for palindromes and passwords are RNNpalindrome.ipynb and RNNpasswords.ipynb
+
+CNN-based experiments for palindromes and passwords are ConvPalindrome.ipynb and ConvPasswords.ipynb.
+
+passwords.zip and palindromes.zip are available at [https://osf.io/qfhcy/](https://osf.io/qfhcy/?view_only=dc5b9d0639c74849a19a5da750531452)
 
 ## License
 
