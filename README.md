@@ -1,25 +1,39 @@
-# README #
+# README
 
+## Overview
+This repository contains resources for replicating computational experiments with combinatorial CNNs and other architectures focusing on word classification.
 
-## Usage
-To repeat computational experiments:
+## Usage Instructions
 
-1) For the palindrome case, use the 'palindromes.zip' dataset and unpack it into the same directory as 'palindromeCCN.ipynb'.
+### Setting Up the Environment
 
-2) For the password case, use the 'passwords.zip' dataset and unpack it into the same directory as 'passwordsCCNN.ipynb'. Also, copy 'goodpasswords.txt' and 'badpasswords.txt' into the same directory.
+1. **Datasets**: 
+   - For palindrome-related experiments, download and extract `palindromes.zip` from [this link](https://osf.io/qfhcy/?view_only=dc5b9d0639c74849a19a5da750531452). 
+   - Download and extract `passwords.zip` from the same link for password-related experiments.
+    
+Both zip files contain precomputed combinatorics obtained by executing GeneratePalindromes.ipynb, GenerateNonPalindromes.ipynb and GeneratePasswords.ipynb.
 
-The code for generating palindromes ('palindromes.zip') is in 'GeneratePalindromes.ipynb'.
+### Running Experiments
 
-The code for generating non-palindromes ('palindromes.zip') is in 'GenerateNonPalindromes.ipynb'
+1. **Palindrome Experiments**:
+   - To generate palindromes, use `GeneratePalindromes.ipynb`.
+   - To generate non-palindromes, use `GenerateNonPalindromes.ipynb`.
+   - For (combinatorial) CCNN-based experiments, use `palindromeCCNN.ipynb`.
+   - For CNN-based experiments, use `CNN_palindrome.ipynb`.
+   - For LSTM-based experiments, use `LSTM_RNN_palindrome.ipynb`.
+   - For GRU-based experiments, use `GRU_RNN_palindrome.ipynb`.
+   - For Transformer experiments, use `Transformer_palindrome.ipynb`.
 
-The code for generating passwords is in 'GeneratePasswords.ipynb'.
+2. **Password Experiments**:
+   - To generate passwords, use `GeneratePasswords.ipynb`.
+   - For (combinatorial) CCNN-based experiments, use `passwordsCCNN.ipynb`.
+   - For CNN-based experiments, use `CNN_passwords.ipynb`.
+   - For LSTM-based experiments, use `LSTM_RNN_passwords.ipynb`.
+   - For GRU-based experiments, use `GRU_RNN_passwords.ipynb`.
+   - For Transformer experiments, use `Transformer_passwords.ipynb`.
 
-Correspondingly, LSTM-based experiments for palindromes and passwords are RNNpalindrome.ipynb and RNNpasswords.ipynb
-
-CNN-based experiments for palindromes and passwords are ConvPalindrome.ipynb and ConvPasswords.ipynb.
-
-passwords.zip and palindromes.zip are available at [https://osf.io/qfhcy/](https://osf.io/qfhcy/?view_only=dc5b9d0639c74849a19a5da750531452)
+### Additional Resources
+- Full lists of palindromes, non-palindromes, strong (good) and weak (bad) passwords are available in corresponding `.txt` files within the datasets.
 
 ## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
